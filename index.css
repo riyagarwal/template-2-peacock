@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+:root{
+    --dark_green: #046262;
+    --light_green: #DAEFB3;
+    --light_shade: #239191;
+    --dark_shade: #045252;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    word-spacing: 0.6em;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 1000 ;
+}
+
+
+/* reset styles */
+body{
+    font-size: 16px;
+}
+
+
+.header{
+    background: url("resources/green\ touch.png");
+    /* max-width: 100%; */
+    display: block;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    /* font-weight: 500; */
+}
+.img{
+    width: 10em;
+    position: absolute;
+    top: 5%; 
+}
+.om{
+    /* width: 20em; */
+    /* left: 2%; */
+}
+.mangal{
+    right: 2%;
+}
+
+
+.main{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 3em;
+}
+#header-text{
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+}
+
+#header-text h1{
+    text-align: center;
+    font-size: 4em;
+    line-height: 1em;
+}
+
+.god{
+    background: url(resources/light\ green\ design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 60vh;  */
+    line-height: 2em;
+    text-align: center;
+    padding: 5em 0;
+    color: var(--dark_shade);
+}
+/* .shloka{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+
+.events{
+    background: url(resources/BG\ peacock\ in\ green.jpg);
+    background-size: cover;
+    height: 50%;
+    background-attachment: fixed;
+    text-align: center;
+    /* padding: 2em auto; */
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.events h2{
+    font-size: 2em;
+    color: var(--light_green);
+}
+
+.paksh{
+    background: url(resources/light\ green\ design.jpg);
+    background-size: cover;    
+    text-align: center;
+    padding: 3em 1em ;
+    font-weight: light;
+    line-height: 1.5em ;
+}
+.paksh h3{
+    background: var(--dark_shade);
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0.4em 1em;
+}
+
+.paksh p{
+    color: var(--dark_green);
+}
+
+.about{
+    background: url(resources/BG\ peacock\ in\ green.jpg);
+    background-size: cover;
+    height: 50%;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 5em 0.5em;
+}
+
+.about p{
+    color: white;
+}
+.bng h2{
+    color: var(--light_green);
+}
+.bng h4{
+    color: var(--light_green);
+}
+
+.about .text{
+    color: var(--light_green);
+    padding: 2em 2em 0 2em;
+    line-height: 2em;
+}
+
+footer{
+    background: url(resources/light\ green\ design.jpg);
+    background-size: cover;
+    padding: 3em 1em ;
+    text-align: center;
+    line-height: 2em ;
+}
+
+.darshan{
+    margin-bottom: 1.5em;
+}
+
+footer h3{
+    margin-bottom: -0.5em;
+    background: var(--dark_shade);
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0.2em 1em;
+}
+footer p{
+    color: var(--dark_green);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+
+    .god img{
+        width: 20em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 20px;
+    }
+    .paksh{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: auto 15em;   
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 22px;
+    }
+
+    .god, .paksh, footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: auto 15em;   
+    }
+    .god img{
+        justify-self: center;
+        width: 20em;
+    }
+    .shloka{
+        justify-self: left;
+        padding-top: 5em;
+    }
+    .bng{
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+    }
+    .bng h4{
+        color: var(--light_green);
+        padding-top: 3em;
+    }
+    .text{
+        display: inline-block;
+        max-width: 70%;
+    }
+    .about p{
+        justify-self: center;
+    }
+    .bride{
+        justify-self: left;
+    }
+    .groom{
+        justify-self: right;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        font-size: 24px;
+    }
+}
